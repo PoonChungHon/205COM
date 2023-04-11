@@ -1,0 +1,62 @@
+{% extends "base.html" %} {% block title %} HOME {% endblock %}
+
+{% block content %}
+<h1>HomePage</h1>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+    
+    *{
+    font-family: 'Acme';
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root {
+    --main-color--: red;
+    --text-color--: blue;
+    --bg-color--: rgb(92, 98, 92);
+
+}
+img{
+    width: 100%;
+}
+body{
+    color: var(--text-color--);
+}
+header {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    background: var(--bg-color--);
+    box-shadow: 0 1px 4px hsl(0 4%, 15%, 10%);
+    
+}
+.navcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#logo{
+    color: var(--text-color--);
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.grid{
+    font-stretch: extra-expanded;
+    font-weight: 900;
+}
+</style>
+
+<h1 id="logo">Welcome to the Jungle!</h1>
+<img src="beetle.jpg" class="img">
+
+
+{% endblock %}
+

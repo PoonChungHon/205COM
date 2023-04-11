@@ -1,0 +1,140 @@
+{% extends "base.html" %} {% block title %} shoppage {% endblock %}
+
+{% block content %}
+<h1 align="center">Our Products</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Shop</title>
+    <style>
+        /*grid setting*/
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            background-color: #21f39f;
+            padding: 10px;
+        }
+
+
+
+
+        /* Style the header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        /* Style the product sections */
+        section {
+            background-color: #f2f2f2;
+            border: 1px solid gray;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            width: 30%;
+            display: inline-block;
+        }
+        /* Style the product images */
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        /* Style the buttons */
+        .CART {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        /* Style the footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .product{
+            border-image: auto;
+            width: 200px;
+            height: 200px;
+
+            
+        }
+        h2{
+            font-size: medium;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .details{
+            font-size: small;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to our Online Shop</h1>
+    </header>
+    <main>
+        <div class="grid-container">
+        <section>
+            <h2>Product 1</h2>
+            <p>This Beetle shines like a rainbow when its hit with light</p>
+            <img src="stactic/product1.jpg" alt="Product 1">
+            <p>Price: $300.00</p>
+            <button class="CART">Add to Cart</button>
+        </section>
+    
+        <section>
+            <h2>Titan Stagbeetle</h2>
+            <p>A fearsome beetle with gigantic mandibles</p>
+            <img src="stactic/product2.jpg" alt="Product 2">
+            <p>Price: $250.00</p>
+            <button class="CART">Add to Cart</button>
+        </section>
+        <section>
+            <h2>Hercules Beetle</h2>
+            <p>Beetle with a massive horn </p>
+            <img src="stactic/product3.jpg" alt="Product 3">
+            <p>Price: $150.00</p>
+            <button class="CART">Add to Cart</button>
+        </section>
+        <section>
+            <h2>Dynastes neptunus</h2>
+            <p>A beautiful 4 horned beetle in a polished black carapace</p>
+            <img src="stactic/product4.jpg" alt="Product 4">
+            <p>Price: $250.00</p>
+            <button class="CART">Add to Cart</button>
+        </section>
+        <section>
+            <h2>Goliath Beetle</h2>
+            <p>Humungous Beetle with both weight and power</p>
+            <img src="stactic/product5.jpg" alt="Product 5">
+            <p>Price: $360.00</p>
+            <button class="CART">Add to Cart</button>
+        </section>
+        
+        <section>
+            <h2>Darwin's beetle</h2>
+            <p>A strange beetle with slim, saw-like mandibles</p>
+            <img src="stactic/product6.jpg" alt="Product 6">
+            <p>Price: $550.00</p>
+            <button class="CART">Add to Cart</button>
+        </section>
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy; 2023 Online BUG Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+{% endblock %}
